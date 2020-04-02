@@ -1,0 +1,14 @@
+model\entities\Club.class
+controller\command\WatchDeleteCommand.class
+model\exceptions\DAOException.class
+controller\command\HomeCommand.class
+model\DAO\DAOClub.class
+controller\command\Command.class
+controller\command\RouteCommand.class
+controller\MainServlet.class
+model\entities\Player.class
+model\exceptions\JDBCConnectionException.class
+controller\command\LoginCommand.class
+model\DAO\DAO.class
+model\entities\Club_.class
+model\entities\Player_.class
