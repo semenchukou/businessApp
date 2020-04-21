@@ -61,7 +61,7 @@
         <tbody>
         <c:forEach items="${clubs}" var="club" >
             <tr>
-                <td scope="col">${club.idClub}</td>
+                <td scope="col">${club.club_id}</td>
                 <td scope="col">${club.name}</td>
                 <td scope="col">${club.foundation_year}</td>
                 <td scope="col">${club.coach}</td>
