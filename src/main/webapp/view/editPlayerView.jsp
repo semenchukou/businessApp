@@ -39,7 +39,7 @@
     <p align="center" style="font-size:25px;">Choose player:
         <select name="player_id" style="font-size:20px;">
             <c:forEach items="${players}" var="player">
-                <option value="${player.idPlayers}" style="font-size:20px;">${player.name}, goals: ${player.goals}, transfer cost: ${player.transfer_cost}</option>
+                <option value="${player.player_id}" style="font-size:20px;">${player.name}, goals: ${player.goals}, transfer cost: ${player.transfer_cost}</option>
             </c:forEach>
         </select>
         <input type='submit' value="Edit" style="font-size:20px;"/>

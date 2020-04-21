@@ -2,15 +2,15 @@ package model.entities;
 
 import javax.persistence.*;
 
-@Entity(name = "Clubs")
+@Entity(name = "clubs")
 @Table(name = Club.tableName)
 public class Club implements java.io.Serializable{
 
-    public static final String tableName = "Clubs";
+    public static final String tableName = "clubs";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idClub;
+    private int club_id;
 
     private String name;
 
@@ -28,12 +28,12 @@ public class Club implements java.io.Serializable{
         this.foundation_year = foundation_year;
     }
 
-    public int getIdClub() {
-        return idClub;
+    public int getClub_id() {
+        return club_id;
     }
 
-    public void setIdClub(int idClub) {
-        this.idClub = idClub;
+    public void setClub_id(int idClub) {
+        this.club_id = idClub;
     }
 
     public String getName() {
@@ -59,7 +59,7 @@ public class Club implements java.io.Serializable{
     @Override
     public String toString() {
         return "Club{" +
-                "idClub=" + idClub +
+                "idClub=" + club_id +
                 ", name='" + name + '\'' +
                 ", coach='" + coach + '\'' +
                 ", foundation_year=" + foundation_year +

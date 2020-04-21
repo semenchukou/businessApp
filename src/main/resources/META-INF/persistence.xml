@@ -10,14 +10,14 @@
         <class>model.entities.Club</class>
         <class>model.entities.Player</class>
         <properties>
-            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/> <!-- DB Driver -->
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/ba?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useSSL=false"/> <!-- BD Mane -->
-            <property name="hibernate.connection.username" value="root"/> <!-- DB User -->
-            <property name="hibernate.connection.password" value="12345"/> <!-- DB Password -->
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/> <!-- DB Driver -->
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-247-79-178.eu-west-1.compute.amazonaws.com:5432/d664i7p8hdv3sm?sslmode=require"/> <!-- BD Mane -->
+            <property name="hibernate.connection.username" value="rkwtcnauqbjosh"/> <!-- DB User -->
+            <property name="hibernate.connection.password" value="5e373a2755aae6816b2731dae564cf07e9aab20dc5e07aa3e080cf44b1c5a739"/> <!-- DB Password -->
             <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- create / create-drop / update -->
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="false"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect"/>
         </properties>
     </persistence-unit>
 </persistence>

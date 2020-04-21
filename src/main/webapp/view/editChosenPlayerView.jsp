@@ -42,7 +42,7 @@
     <table border="0" cellspacing="5" cellpadding="10" align="center">
         <tr>
             <td>Name:</td>
-            <td><input type="text" name="name" value="${player.name}" style="font-size:20px;"/><input type="hidden" name="player_id" value="${player.idPlayers}"></td>
+            <td><input type="text" name="name" value="${player.name}" style="font-size:20px;"/><input type="hidden" name="player_id" value="${player.player_id}"></td>
         </tr>
         <tr>
             <td>Transfer cost:</td>

@@ -3,15 +3,15 @@ package model.entities;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "Players")
+@Entity(name = "players")
 @Table(name = Player.tableName)
 public class Player {
 
-    public static final String tableName = "Players";
+    public static final String tableName = "players";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idPlayers;
+    private int player_id;
 
     private String name;
 
@@ -47,12 +47,12 @@ public class Player {
         this.club_id = club_id;
     }
 
-    public int getIdPlayers() {
-        return idPlayers;
+    public int getPlayer_id() {
+        return player_id;
     }
 
-    public void setIdPlayers(int idPlayers) {
-        this.idPlayers = idPlayers;
+    public void setPlayer_id(int idPlayers) {
+        this.player_id = idPlayers;
     }
 
     public String getName() {
@@ -98,7 +98,7 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "idPlayers=" + idPlayers +
+                "idPlayers=" + player_id +
                 ", name='" + name + '\'' +
                 ", birth_date=" + birth_date +
                 ", transfer_cost=" + transfer_cost +

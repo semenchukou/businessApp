@@ -63,7 +63,7 @@
         <tbody>
         <c:forEach items="${players}" var="player">
             <tr>
-                <td scope="col">${player.idPlayers}</td>
+                <td scope="col">${player.player_id}</td>
                 <td scope="col">${player.name}</td>
                 <td scope="col">${player.birth_date}</td>
                 <td scope="col">${player.transfer_cost}</td>
