@@ -57,7 +57,7 @@
             <td>
                 <select name="club_id" style="font-size:20px;">
                     <c:forEach items="${clubs}" var="club">
-                        <option value="${club.idClub}" style="font-size:20px;">${club.name}</option>
+                        <option value="${club.club_id}" style="font-size:20px;">${club.name}</option>
                     </c:forEach>
                 </select>
             </td>

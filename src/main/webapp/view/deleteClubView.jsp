@@ -39,7 +39,7 @@
     <p align="center" style="font-size:25px;">Choose club:
         <select name="club_id" style="font-size:20px;">
             <c:forEach items="${clubs}" var="club">
-                <option value="${club.idClub}" style="font-size:20px;">${club.name}, foundation
+                <option value="${club.club_id}" style="font-size:20px;">${club.name}, foundation
                     year: ${club.foundation_year}, coach: ${club.coach}</option>
             </c:forEach>
         </select>

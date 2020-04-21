@@ -46,7 +46,7 @@
         </tr>
         <tr>
             <td>Coach:</td>
-            <td><input type="text" name="coach" value="${club.coach}" style="font-size:20px;"/><input type="hidden" name="club_id" value="${club.idClub}"></td>
+            <td><input type="text" name="coach" value="${club.coach}" style="font-size:20px;"/><input type="hidden" name="club_id" value="${club.club_id}"></td>
         </tr>
         <tr>
             <td>Foundation year:</td>
