@@ -1,11 +1,16 @@
+controller\command\WatchCommand.class
+model\DAO\DAOPlayer.class
 model\entities\Club.class
-controller\command\WatchDeleteCommand.class
 model\exceptions\DAOException.class
+controller\command\AddCommand.class
+controller\command\EditCommand.class
 controller\command\HomeCommand.class
 model\DAO\DAOClub.class
 controller\command\Command.class
 controller\command\RouteCommand.class
 controller\MainServlet.class
+controller\command\EditChosenCommand.class
+controller\command\DeleteCommand.class
 model\entities\Player.class
 model\exceptions\JDBCConnectionException.class
 controller\command\LoginCommand.class
