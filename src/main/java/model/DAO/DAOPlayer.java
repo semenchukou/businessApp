@@ -46,7 +46,7 @@ public class DAOPlayer extends DAO {
             CriteriaBuilder cb = entityManager.getCriteriaBuilder();
             CriteriaQuery<Player> cq = cb.createQuery(Player.class);
             Root<Player> cl = cq.from(Player.class);
-            cq.select(cl).where(cb.equal(cl.get("idPlayers"), id));
+            cq.select(cl).where(cb.equal(cl.get("player_id"), id));
             TypedQuery<Player> q = entityManager.createQuery(cq);
             player = q.getSingleResult();
         } catch (Exception e) {
@@ -90,7 +90,7 @@ public class DAOPlayer extends DAO {
             CriteriaDelete<Player> delete = cb.
                     createCriteriaDelete(Player.class);
             Root e = delete.from(Player.class);
-            delete.where(cb.equal(e.get("idPlayers"), id));
+            delete.where(cb.equal(e.get("player_id"), id));
             entityManager.getTransaction().begin();
             entityManager.createQuery(delete).executeUpdate();
             entityManager.getTransaction().commit();
@@ -120,7 +120,7 @@ public class DAOPlayer extends DAO {
             update.set("transfer_cost", player.getTransfer_cost());
             update.set("goals", player.getGoals());
             update.set("club_id", player.getClub_id());
-            update.where(cb.equal(e.get("idPlayers"), id));
+            update.where(cb.equal(e.get("player_id"), id));
 
             entityManager.getTransaction().begin();
             entityManager.createQuery(update).executeUpdate();

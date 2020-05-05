@@ -45,7 +45,7 @@ public class DAOClub extends DAO {
             CriteriaBuilder cb = entityManager.getCriteriaBuilder();
             CriteriaQuery<Club> cq = cb.createQuery(Club.class);
             Root<Club> cl = cq.from(Club.class);
-            cq.select(cl).where(cb.equal(cl.get("idClub"), id));
+            cq.select(cl).where(cb.equal(cl.get("club_id"), id));
             TypedQuery<Club> q = entityManager.createQuery(cq);
             club = q.getSingleResult();
         } catch (Exception e) {
@@ -89,7 +89,7 @@ public class DAOClub extends DAO {
             CriteriaDelete<Club> delete = cb.
                     createCriteriaDelete(Club.class);
             Root e = delete.from(Club.class);
-            delete.where(cb.equal(e.get("idClub"), id));
+            delete.where(cb.equal(e.get("club_id"), id));
             entityManager.getTransaction().begin();
             entityManager.createQuery(delete).executeUpdate();
             entityManager.getTransaction().commit();
@@ -117,7 +117,7 @@ public class DAOClub extends DAO {
             update.set("name", club.getName());
             update.set("foundation_year", club.getFoundation_year());
             update.set("coach", club.getCoach());
-            update.where(cb.equal(e.get("idClub"), id));
+            update.where(cb.equal(e.get("club_id"), id));
 
             entityManager.getTransaction().begin();
             entityManager.createQuery(update).executeUpdate();
